@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+    <div class="container_items">
+        <div class="vert">
+            <div class="title"><h2>Medicine</h2><button onclick="scroll()" class="scroll">right</button></div>
+            <div class="medicine meds">
+                <div class="Paracetamol">
+                    <div class="photo"><img src="Paracetamol.png" style="width: 60%;"></div>
+                    <div class="name"><p>Paracetamol</p></div>
+                    <div class="price"><p>18.50rs</p></div>
+                    <button onclick="add(this)" name="Paracetamol" price="18.50" img="Paracetamol.png">Add</button>
+                </div>
+                <div class="Cough Syrup">
+                    <div class="photo"><img src="cough.png" style="width: 60%;"></div>
+                    <div class="name"><p>Cough Syrup</p></div>
+                    <div class="price"><p>60.00</p></div>
+                    <button onclick="add(this)" name="Cough Syrup" price="60.00" img="cough.png">Add</button>
+                </div>
+                <div class="Antibiotics">
+                    <div class="photo"><img src="antibiotic.png" style="width: 60%;"></div>
+                    <div class="name"><p>Antibiotics</p></div>
+                    <div class="price"><p>120.75</p></div>
+                    <button onclick="add(this)" name="Antibiotics" price="120.75" img="antibiotic.png">Add</button>
+                </div>
+                <div class="Allergy Tablets">
+                    <div class="photo"><img src="allergy.png" style="width: 60%;"></div>
+                    <div class="name"><p>Allergy Tablets</p></div>
+                    <div class="price"><p>95.25</p></div>
+                    <button onclick="add(this)" name="Allergy Tablets" price="95.25" img="allergy.png">Add</button>
+                </div>
+                <div class="Antifungal Cream">
+                    <div class="photo"><img src="antifungal.png" style="width: 60%;"></div>
+                    <div class="name"><p>Antifungal Cream</p></div>
+                    <div class="price"><p>80.00</p></div>
+                    <button onclick="add(this)" name="Antifungal Cream" price="80.00" img="antifungal.png">Add</button>
+                </div>
+                <div class="Antipregnancy Pills">
+                    <div class="photo"><img src="antipregnancy.png" style="width: 60%;"></div>
+                    <div class="name"><p>Antipregnancy Pills</p></div>
+                    <div class="price"><p>135.90</p></div>
+                    <button onclick="add(this)" name="Antipregnancy Pills" price="135.90" img="antipregnancy.png">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="vert">
+            <div class="title"><h2>Beauty Products</h2><button onclick="scroll()" class="scroll">right</button></div>
+            <div class="beauty meds">
+                <div class="Lip Balm">
+                    <div class="photo"><img src="lip.png" style="width: 60%;"></div>
+                    <div class="name"><p>Lip Balm</p></div>
+                    <div class="price"><p>45.00</p></div>
+                    <button onclick="add(this)" name="Lip Balm" price="45.00" img="lip.png">Add</button>
+                </div>
+                <div class="Shampoo">
+                    <div class="photo"><img src="shampoo.png" style="width: 60%;"></div>
+                    <div class="name"><p>Shampoo</p></div>
+                    <div class="price"><p>110.49</p></div>
+                    <button onclick="add(this)" name="Shampoo" price="110.49" img="shampoo.png">Add</button>
+                </div>
+                <div class="Face Cream">
+                    <div class="photo"><img src="face.png" style="width: 60%;"></div>
+                    <div class="name"><p>Face Cream</p></div>
+                    <div class="price"><p>150.00</p></div>
+                    <button onclick="add(this)" name="Face Cream" price="150.00"  img="face.png">Add</button>
+                </div>
+                <div class="Body Lotion">
+                    <div class="photo"><img src="body.png" style="width: 60%;"></div>
+                    <div class="name"><p>Body Lotion</p></div>
+                    <div class="price"><p>175.25</p></div>
+                    <button onclick="add(this)" name="Body Lotion" price="175.25" img="body.png">Add</button>
+                </div>
+                <div class="Compact Powder">
+                    <div class="photo"><img src="powder.png" style="width: 60%;"></div>
+                    <div class="name"><p>Compact Powder</p></div>
+                    <div class="price"><p>220.75</p></div>
+                    <button onclick="add(this)" name="Compact Powder" price="220.75" img="powder.png">Add</button>
+                </div>
+                <div class="Sunscreen">
+                    <div class="photo"><img src="sunscreen.png" style="width: 60%;"></div>
+                    <div class="name"><p>Sunscreen</p></div>
+                    <div class="price"><p>199.99</p></div>
+                    <button onclick="add(this)" name="Sunscreen" price="199.99" img="sunscreen.png">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="vert">
+            <div class="title"><h2>Medical devices</h2><button onclick="scroll()" class="scroll">right</button></div>
+            <div class="device meds">
+                <div class="Thermometer">
+                    <div class="photo"><img src="thermometer.png" style="width: 60%;"></div>
+                    <div class="name"><p>Thermometer</p></div>
+                    <div class="price"><p>249.00</p></div>
+                    <button onclick="add(this)" name="Thermometer" price="249.00" img="thermometer.png">Add</button>
+                </div>
+                <div class="BP Monitor">
+                    <div class="photo"><img src="bp.png" style="width: 60%;"></div>
+                    <div class="name"><p>BP Monitor</p></div>
+                    <div class="price"><p>1450.50</p></div>
+                    <button onclick="add(this)" name="BP Monitor" price="1450.50" img="bp.png">Add</button>
+                </div>
+                <div class="Stethoscope">
+                    <div class="photo"><img src="stethoscope.png" style="width: 60%;"></div>
+                    <div class="name"><p>Stethoscope</p></div>
+                    <div class="price"><p>550.75</p></div>
+                    <button onclick="add(this)" name="Stethoscope" price="550.75" img="stethoscope.png">Add</button>
+                </div>
+                <div class="Nebulizer">
+                    <div class="photo"><img src="nebulizer.png" style="width: 60%;"></div>
+                    <div class="name"><p>Nebulizer</p></div>
+                    <div class="price"><p>1799.90</p></div>
+                    <button onclick="add(this)" name="Nebulizer" price="1799.90" img="nebulizer.png">Add</button>
+                </div>
+                <div class="Oxymeter">
+                    <div class="photo"><img src="oxymeter.png" style="width: 60%;"></div>
+                    <div class="name"><p>Oxymeter</p></div>
+                    <div class="price"><p>899.00</p></div>
+                    <button onclick="add(this)" name="Oxymeter" price="899.00" img="oxymeter.png">Add</button>
+                </div>
+                <div class="Glucometer">
+                    <div class="photo"><img src="glucometer.png" style="width: 60%;"></div>
+                    <div class="name"><p>Glucometer</p></div>
+                    <div class="price"><p>1250.40</p></div>
+                    <button onclick="add(this)" name="Glucometer" price="1250.40" img="glucometer.png">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="vert">
+            <div class="title"><h2>Ayurvedic Products</h2><button onclick="scroll()" class="scroll">right</button></div>
+            <div class="ayur meds">
+                <div class="Ashwagandha">
+                    <div class="photo"><img src="ashwagandha.png" style="width: 60%;"></div>
+                    <div class="name"><p>Ashwagandha</p></div>
+                    <div class="price"><p>349.00</p></div>
+                    <button onclick="add(this)" name="Ashwagandha" price="349.00" img="ashwagandha.png">Add</button>
+                </div>
+                <div class="Triphala">
+                    <div class="photo"><img src="Triphala.png" style="width: 60%;"></div>
+                    <div class="name"><p>Triphala</p></div>
+                    <div class="price"><p>229.99</p></div>
+                    <button onclick="add(this)" name="Triphala" price="229.99" img="Triphala.png">Add</button>
+                </div>
+                <div class="Chyawanprash">
+                    <div class="photo"><img src="chya.jpg" style="width: 60%;"></div>
+                    <div class="name"><p>Chyawanprash</p></div>
+                    <div class="price"><p>375.50</p></div>
+                    <button onclick="add(this)" name="Chyawanprash" price="375.50" img="chya.jpg">Add</button>
+                </div>
+                <div class="Neem Tablets">
+                    <div class="photo"><img src="neem.png" style="width: 60%;"></div>
+                    <div class="name"><p>Neem Tablets</p></div>
+                    <div class="price"><p>190.00</p></div>
+                    <button onclick="add(this)" name="Neem Tablets" price="190.00" img="neem.png">Add</button>
+                </div>
+                <div class="Hing Goli">
+                    <div class="photo"><img src="hing.png" style="width: 60%;"></div>
+                    <div class="name"><p>Hing Goli</p></div>
+                    <div class="price"><p>99.90</p></div>
+                    <button onclick="add(this)" name="Hing Goli" price="99.90" img="hing.png">Add</button>
+                </div>
+                <div class="Brahmi">
+                    <div class="photo"><img src="brahmi.png" style="width: 60%;"></div>
+                    <div class="name"><p>Brahmi</p></div>
+                    <div class="price"><p>210.00</p></div>
+                    <button onclick="add(this)" name="Brahmi" price="210.00" img="brahmi.png">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart"></div>
+    <script src="medicine.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Layout containers */
+.container_items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.vert {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Section titles */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title h2 {
+    color: #343a40;
+}
+
+.scroll {
+    padding: 6px 14px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll:hover {
+    background-color: #0056b3;
+}
+
+
+.meds {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;          
+    -ms-overflow-style: none;       
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+
+.meds > div{
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(100% / 4 - 20px); 
+    box-sizing: border-box;
+}
+
+.photo img {
+    width: 80vw;
+    margin-bottom: 10px;
+}
+
+.name p {
+    font-weight: bold;
+    color: #333;
+}
+
+.price p {
+    color: #888;
+    margin: 5px 0;
+}
+
+
+button {
+    padding: 6px 12px;
+    margin-top: 8px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+.cart {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 90%;
+    border-top: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.cart_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.cart_item h3 {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+}
+
+.cart_item img {
+    width: 50px;
+    height: auto;
+}
+
+.cart_item .price {
+    color: #666;
+    margin-right: 10px;
+}
+
+#add_button,
+#sub_button {
+    background-color: #007bff;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+#add_button:hover,
+#sub_button:hover {
+    background-color: #0056b3;
+}
+
+#quant_span {
+    padding: 4px 8px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 6px;
+    background-color: #fff;
+}
+
+/* Calculation box */
+.math {
+    background-color: #f0f9ff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #b8daff;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.math h2,
+.math h3,
+.math h4 {
+    color: #007bff;
+    margin: 10px 0;
+}

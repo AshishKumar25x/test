@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="organ.css">
+</head>
+
+<body>
+    <nav>
+        Replace
+    </nav>
+    <div class="full">
+        <div class="side">
+            <div class="moto">
+                <h3>Our Motto</h3>
+                <p>Our website is dedicated to making organ donation a seamless process for everyone. We provide a
+                    simple and digital way to create a pledge form for organ donation. By filling out our user-friendly
+                    form, you can officially declare your wish to contribute to saving lives.<br><br>
+                    After completing the pledge, users are encouraged to submit their form to NGOs or the organ
+                    transplant department of hospitals, along with a family witness to make it legally binding.<br><br>
+                    In addition, we support users by generating an official PDF pledge certificate that can be
+                    downloaded and submitted offline for registration. Our goal is to increase awareness and encourage
+                    more individuals to become organ donors, helping save countless lives.</p>
+            </div>
+            <div class="notto">
+                <h3>NOTTO</h3>
+                <p>The National Organ and Tissue Transplant Organization (NOTTO) is a government agency under the
+                    Ministry of Health and Family Welfare, dedicated to promoting organ donation across India. It serves
+                    as the central coordinating body for organ transplantation, ensuring the safe and ethical
+                    distribution of organs to those in need. NOTTO's mission is to increase awareness about organ
+                    donation, maintain a transparent registry, and facilitate the smooth exchange of organs across the
+                    country.
+            </div>
+            <div class="pledge_form">
+                <div class="contact_section">
+                    <h2>Contact Nearby Hospitals or NGOs</h2>
+                    <p>If you need assistance with organ donation after someone's passing, you can contact nearby
+                        hospitals or NGOs specializing in organ transplants. Fill out the form below, and we can assist
+                        in reaching out to nearby centers.</p>
+
+                    <form>
+                        <label for="location">Enter your location (City/Town):</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your city or town" required>
+                        <button id="btn">Find Nearby NGOs/Hospitals</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="pledge_form">
+                <h2>Organ Donation Pledge Form</h2>
+                <p>I, the undersigned, hereby pledge to donate my organs and/or tissues after my death to help save
+                    lives and improve health for others. I make this decision voluntarily and with full understanding of
+                    its importance.</p>
+                <label>Full Name:
+                    <input type="text" placeholder="Enter your full name" class="inp">
+                </label>
+                <label>Date of Birth:
+                    <input type="date" class="inp">
+                </label>
+                <label>Gender:
+                    <select class="inp" id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>Address:
+                    <input type="text" placeholder="Enter your full address with pincode" class="inp">
+                </label>
+                <label>Contact Number:
+                    <input type="tel" placeholder="Phone number" class="inp">
+                </label>
+                <label>Email:
+                    <input type="email" placeholder="Your email address" class="inp">
+                </label>
+                <label>Aadhaar Number:
+                    <input type="text" placeholder="XXXX-XXXX-XXXX" class="inp">
+                </label>
+                <p>Organs/Tissues to Donate:</p>
+                <div class="checkbox_org">
+                    <label><input type="checkbox">Eyes</label>
+                    <label><input type="checkbox">Kidneys</label>
+                    <label><input type="checkbox">Heart</label>
+                    <label><input type="checkbox">Liver</label>
+                    <label><input type="checkbox">Lungs</label>
+                    <label><input type="checkbox">Pancreas</label>
+                    <label><input type="checkbox">Skin</label>
+                    <label><input type="checkbox">Small Intestine</label>
+                </div>
+            </div>
+            <div class="imp_ins">
+                <h3>Important Instructions:</h3>
+                <p><b>1.Witness Requirement:</b> You must bring a family member as a witness who will sign this form
+                    alongside you. The witness will confirm that this pledge is voluntary and understood by you.</p>
+                <p><b>2.Submit this pledge form at an authorized location:</b> To make this pledge official, submit your
+                    signed form to any of the following:
+                <ul>
+                    <li>Organ Donation Registration Camps</li>
+                    <li>NGOs working in the field of organ donation (e.g., MOHAN Foundation)</li>
+                    <li>The Organ & Transplant Department at a hospital</li>
+                </ul>
+                </p>
+                <p>3.<b>Required Documents:</b> Along with this form, bring your valid ID proof (<b>e.g.,</b> Aadhaar,
+                    Voter ID) for verification.</p>
+                <p>This form is not legally binding unless submitted to the relevant authorities. The official
+                    registration with NOTTO or your state organ donation registry must be done at one of the authorized
+                    locations mentioned above.</p>
+            </div>
+        </div>
+    </div>
+    <button id="downloadBtn">Download Pledge Form as PDF</button>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="organ.js"></script>
+
+</body>
+
+</html>
